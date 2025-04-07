@@ -1,0 +1,55 @@
+import random
+import time
+
+goons = {
+    "Blorp": "turns everything into jello",
+    "Skid": "overclocks the mouse until it breaks the sound barrier",
+    "Zazz": "can summon glitter through WiFi",
+    "Noodle": "types random Shakespeare quotes at 200 WPM",
+    "Captain Honk": "controls all honking-based tech"
+}
+
+missions = [
+    "reverse engineered a potato into a router",
+    "uploaded their consciousness into a Roomba",
+    "set off the fire alarm using only a kazoo",
+    "taught ChatGPT to meow in 17 languages",
+    "started a dance battle with the printer",
+    "activated DARK MODE... permanently"
+]
+
+def intro():
+    print("⚡️ Goon Squad 2: ELECTRIC HONKALOO ⚡️\n")
+    time.sleep(1)
+    print("💻 SYSTEM BREACH DETECTED\n")
+    time.sleep(0.8)
+    print("Deploying goons...\n")
+    time.sleep(1)
+
+def deploy_goons():
+    for name, power in goons.items():
+        print(f"🌀 {name} has entered the chat.")
+        time.sleep(0.6)
+        print(f"   🛠️ Special Ability: {power}")
+        time.sleep(0.8)
+        mission = random.choice(missions)
+        print(f"   🎯 Mission: {mission}")
+        print()
+        time.sleep(1)
+
+def finale():
+    print("🔥 Goon Squad has successfully destabilized your coffee cup.")
+    time.sleep(1)
+    print("🎉 SYSTEM STATUS: Gloriously Unstable™")
+    print("🥳 Expect glitter storms and honks at random intervals.\n")
+    time.sleep(1)
+    print("⚠️ WARNING: Captain Honk is now in control of your speakers.")
+    print("📢 HOOOONK 💥\n")
+
+def main():
+    intro()
+    deploy_goons()
+    finale()
+
+if __name__ == "__main__":
+    main()
